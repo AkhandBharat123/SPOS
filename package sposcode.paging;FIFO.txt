@@ -1,0 +1,25 @@
+package sposcode.paging;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Fifo {
+   public static void main(String[] args) {
+       Queue<String> queue = new LinkedList<String>();
+       queue.add("486");
+       queue.add("294");
+       queue.add("352");
+       queue.add("965");
+       queue.add("169");
+       System.out.println("Created Queue: " + queue);
+       String value = queue.remove();
+       
+       System.out.println("The element deleted from the head is: " + value);
+       System.out.println("The queue after deletion: " + queue);
+      
+       String head = queue.peek();
+       System.out.println("The head of the present queue is: " + head);
+       
+       int size = queue.size();
+       System.out.println("The size of the queue is: " + size); 
+   }
+}
